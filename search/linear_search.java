@@ -1,5 +1,3 @@
-package search;
-
 import java.util.*;
 
 public class linear_search {
