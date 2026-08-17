@@ -1,5 +1,3 @@
-
-
 class C_LL{
     private int size;
     private Node head;

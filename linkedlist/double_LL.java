@@ -16,9 +16,6 @@ class D_LL{
         node.next=head;
         head.prev=node;
         head=node;
-        if(tail==null){
-            head=tail;
-        } 
         size++;
     }
     public void insertlast(int val){

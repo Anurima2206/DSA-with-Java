@@ -42,6 +42,20 @@
         size++;
         
     }
+    
+    public void insertrec(int index,int i,int val,Node temp){
+        if(i==0){
+            Node node=new Node(val);
+        }
+        if(i==index-1){
+            Node node=new Node(val);
+            node.next=temp.next;
+            temp.next=node;
+            size++;
+            return; 
+        } 
+        insertrec(index, i+1, val,temp.next);  
+    }
 
     public int deletefirst(){
         Node temp=head;
@@ -130,13 +144,11 @@ public class singly_LL{
         n1.insertfirst(9);
         n1.insertfirst(5);
         n1.insertfirst(8);
-        n1.insertfirst(2);
-        n1.insertfirst(10);
-        n1.insertfirst(16);
+        n1.insertrec(2, 0, 69,n1.get(0));
         n1.display();
         //System.out.println(n1.deletefirst());
         //System.out.println(n1.deletelast());
-        System.out.println(n1.delete(3));
-        n1.display();
+        //System.out.println(n1.delete(3));
+        //n1.display();
     }
 }

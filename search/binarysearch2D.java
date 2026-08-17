@@ -1,4 +1,3 @@
-package search;
 import java.util.*;
 public class binarysearch2D {
     public static void main(String[] args) {

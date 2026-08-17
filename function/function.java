@@ -9,7 +9,6 @@ public class function {
         int c = sc.nextInt();
         int d = sc.nextInt();
         sum2(c, d);
-        sc.close();
         // HRNA
         int r = sum3();
         System.out.println("sum=" + r);
@@ -29,7 +28,6 @@ public class function {
         int b = sc.nextInt();
         int c = a + b;
         System.out.println("sum=" + c);
-        sc.close();
     }
 
     // NRHA
@@ -44,7 +42,6 @@ public class function {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = a + b;
-        sc.close();
         return c;
 
     }
