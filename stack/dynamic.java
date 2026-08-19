@@ -5,6 +5,7 @@ public class dynamic extends Custom_stack{
     public dynamic(int size){
         super(size);
     }
+    @Override
     public void push(int val){
         if(this.isFull()){
            int[] temp=new int[data.length*2];
